@@ -1,0 +1,249 @@
+$MainColor: #86a9bf;
+
+// ボディ
+.Index_Body {
+    background: {
+        image: url(../images/profile.jpg);
+        size: 100% auto;
+        repeat: no-repeat;
+        attachment: fixed;
+    }
+}
+
+// メインビジュアル
+.MainVis_Wrap {
+    background-color: $MainColor;
+    .MainVis_Title {
+        color: #ffffff;
+        text-align: center;
+        padding: {
+            top: 320px;
+            bottom: 320px;
+        }
+        font: {
+            size: 48px;
+            weight: bold;
+        }
+    }
+}
+
+// 作品
+.Works_Wrap {
+    padding: {
+        top: 120px;
+        bottom: 120px;
+    }
+    background-color: #ffffff;
+    .Works {
+        width: 960px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        .Content_Parent {
+            .Content_Child {
+                a {
+                    text-align: center;
+                    background-color: rgba(0, 0, 0, 0);
+                    color: rgba(255, 255, 255, 0);
+                    display: block;
+                    &:hover {
+                        color: rgba(255, 255, 255, 1);
+                        background-color: rgba(0, 0, 0, 0.8);
+                        transition: 0.6s;
+                    }
+                }
+            }
+        }
+        .Content_Wrap {
+            width: 480px;
+            .Content_Toilet {
+                background: {
+                    // color: #cccccc;
+                    image: url(../images/toilet1.png);
+                    size: 480px;
+                    position: center;
+                    repeat: no-repeat;
+                }
+            }
+            .Content_Blog {
+                background: {
+                    // color: #333333;
+                    image: url(../images/blog1.png);
+                    size: 240px;
+                    position: center;
+                    repeat: no-repeat;
+                }
+            }
+            .Content_Moma {
+                background: {
+                    // color: #999999;
+                    image: url(../images/moma1.png);
+                    size: 240px;
+                    position: center;
+                    repeat: no-repeat;
+                }
+            }
+            .Content_Jinro {
+                background: {
+                    // color: #999999;
+                    image: url(../images/jinro1.png);
+                    size: 240px;
+                    position: center;
+                    repeat: no-repeat;
+                }
+            }
+            .Content_ToiletLP {
+                background: {
+                    // color: #333333;
+                    image: url(../images/toilet-lp1.png);
+                    size: 240px;
+                    position: center;
+                    repeat: no-repeat;
+                }
+            }
+        }
+        .Content_Mid_Wrap {
+            width: 480px;
+            height: 480px;
+            .Content_Mid {
+                height: 480px;
+                width: 480px;
+                transition: 0.6s;
+                &:hover {
+                    background: {
+                        size: 560px;
+                    }
+                    transition: 0.6s;
+                }
+                a {
+                    width: 480px;
+                    height: 480px;
+                    font-size: 18px;
+                    line-height: 480px;
+                }
+            }
+        }
+        .Content_Small_Wrap {
+            display: flex;
+            flex-wrap: wrap;
+            .Content_Small {
+                width: 240px;
+                height: 240px;
+                transition: 0.6s;
+                &:hover {
+                    background: {
+                        size: 260px;
+                    }
+                    transition: 0.6s;
+                }
+                a {
+                    width: 240px;
+                    height: 240px;
+                    font-size: 14px;
+                    line-height: 240px;
+                }
+            }
+        }
+    }
+}
+
+// プロフィール
+.Profile_Wrap {
+    width: 100%;
+    background-color: rgba(40, 40, 40, 0.65);
+    padding: {
+        top: 120px;
+        bottom: 120px;
+    }
+    .Profile {
+        width: 480px;
+        margin: 0 auto;
+        position: relative;
+        .Profile_Image {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 1px solid #ffffff;
+        }
+        .Profile_Text {
+            p {
+                color: #ffffff;
+                margin: {
+                    top: 1.5em;
+                }
+                font: {
+                    size: 14px;
+                }
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+        }
+        .Profile_Link {
+            padding-top: 4em;
+            display: flex;
+            justify-content: space-between;
+            width: 480px;
+            li {
+                a {
+                    padding: 8px 32px;
+                    font-size: 14px;
+                    display: block;
+                    border: 1px solid #ffffff;
+                    color: #ffffff;
+                    &:hover {
+                        background-color: #ffffff;
+                        color: #666666;
+                    }
+                }
+                margin-left: 16px;
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
+
+// お問い合わせ
+.Contact_Wrap {
+    width: 100%;
+    padding: {
+        top: 120px;
+        bottom: 120px;
+    }
+    background-color: #ffffff;
+    form {
+        width: 480px;
+        margin: 0 auto;
+        input,
+        textarea {
+            padding: 8px;
+            width: 480px;
+            display: block;
+            border: 1px solid $MainColor;
+            margin-top: 1.5em;
+            font-size: 14px;
+        }
+        input {
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+        .Form_Btn {
+            background-color: #ffffff;
+            color: $MainColor;
+            font: {
+                weight: bold;
+            }
+            &:hover {
+                cursor: pointer;
+                background-color: $MainColor;
+                color: #ffffff;
+            }
+        }
+    }
+}

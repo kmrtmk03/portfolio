@@ -1,0 +1,356 @@
+@charset "UTF-8";
+/* ---------- リセット ---------- */
+* {
+  margin: 0;
+  color: #333333;
+  padding: 0;
+  font-size: 16px;
+  list-style: none;
+  text-decoration: none;
+  line-height: 1.7em;
+  border: none;
+  font-family: serif;
+  font-weight: normal;
+  box-sizing: border-box;
+  letter-spacing: 0.1em; }
+
+html, body {
+  width: 100%; }
+
+h1 {
+  font-size: 1.2em; }
+
+h2 {
+  font-size: 1.1em; }
+
+input {
+  border-radius: 0; }
+
+.Index_Body {
+  background-image: url(../images/profile.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+.MainVis_Wrap {
+  background-color: #86a9bf; }
+  .MainVis_Wrap .MainVis_Title {
+    color: #ffffff;
+    text-align: center;
+    padding-top: 320px;
+    padding-bottom: 320px;
+    font-size: 48px;
+    font-weight: bold; }
+
+.Works_Wrap {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: #ffffff; }
+  .Works_Wrap .Works {
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap; }
+    .Works_Wrap .Works .Content_Parent .Content_Child a {
+      text-align: center;
+      background-color: transparent;
+      color: rgba(255, 255, 255, 0);
+      display: block; }
+      .Works_Wrap .Works .Content_Parent .Content_Child a:hover {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.8);
+        transition: 0.6s; }
+    .Works_Wrap .Works .Content_Wrap {
+      width: 480px; }
+      .Works_Wrap .Works .Content_Wrap .Content_Toilet {
+        background-image: url(../images/toilet1.png);
+        background-size: 480px;
+        background-position: center;
+        background-repeat: no-repeat; }
+      .Works_Wrap .Works .Content_Wrap .Content_Blog {
+        background-image: url(../images/blog1.png);
+        background-size: 240px;
+        background-position: center;
+        background-repeat: no-repeat; }
+      .Works_Wrap .Works .Content_Wrap .Content_Moma {
+        background-image: url(../images/moma1.png);
+        background-size: 240px;
+        background-position: center;
+        background-repeat: no-repeat; }
+      .Works_Wrap .Works .Content_Wrap .Content_Jinro {
+        background-image: url(../images/jinro1.png);
+        background-size: 240px;
+        background-position: center;
+        background-repeat: no-repeat; }
+      .Works_Wrap .Works .Content_Wrap .Content_ToiletLP {
+        background-image: url(../images/toilet-lp1.png);
+        background-size: 240px;
+        background-position: center;
+        background-repeat: no-repeat; }
+    .Works_Wrap .Works .Content_Mid_Wrap {
+      width: 480px;
+      height: 480px; }
+      .Works_Wrap .Works .Content_Mid_Wrap .Content_Mid {
+        height: 480px;
+        width: 480px;
+        transition: 0.6s; }
+        .Works_Wrap .Works .Content_Mid_Wrap .Content_Mid:hover {
+          background-size: 560px;
+          transition: 0.6s; }
+        .Works_Wrap .Works .Content_Mid_Wrap .Content_Mid a {
+          width: 480px;
+          height: 480px;
+          font-size: 18px;
+          line-height: 480px; }
+    .Works_Wrap .Works .Content_Small_Wrap {
+      display: flex;
+      flex-wrap: wrap; }
+      .Works_Wrap .Works .Content_Small_Wrap .Content_Small {
+        width: 240px;
+        height: 240px;
+        transition: 0.6s; }
+        .Works_Wrap .Works .Content_Small_Wrap .Content_Small:hover {
+          background-size: 260px;
+          transition: 0.6s; }
+        .Works_Wrap .Works .Content_Small_Wrap .Content_Small a {
+          width: 240px;
+          height: 240px;
+          font-size: 14px;
+          line-height: 240px; }
+
+.Profile_Wrap {
+  width: 100%;
+  background-color: rgba(40, 40, 40, 0.65);
+  padding-top: 120px;
+  padding-bottom: 120px; }
+  .Profile_Wrap .Profile {
+    width: 480px;
+    margin: 0 auto;
+    position: relative; }
+    .Profile_Wrap .Profile .Profile_Image {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 1px solid #ffffff; }
+    .Profile_Wrap .Profile .Profile_Text p {
+      color: #ffffff;
+      margin-top: 1.5em;
+      font-size: 14px; }
+      .Profile_Wrap .Profile .Profile_Text p:first-child {
+        margin-top: 0; }
+    .Profile_Wrap .Profile .Profile_Link {
+      padding-top: 4em;
+      display: flex;
+      justify-content: space-between;
+      width: 480px; }
+      .Profile_Wrap .Profile .Profile_Link li {
+        margin-left: 16px; }
+        .Profile_Wrap .Profile .Profile_Link li a {
+          padding: 8px 32px;
+          font-size: 14px;
+          display: block;
+          border: 1px solid #ffffff;
+          color: #ffffff; }
+          .Profile_Wrap .Profile .Profile_Link li a:hover {
+            background-color: #ffffff;
+            color: #666666; }
+        .Profile_Wrap .Profile .Profile_Link li:first-child {
+          margin-left: 0; }
+
+.Contact_Wrap {
+  width: 100%;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: #ffffff; }
+  .Contact_Wrap form {
+    width: 480px;
+    margin: 0 auto; }
+    .Contact_Wrap form input,
+    .Contact_Wrap form textarea {
+      padding: 8px;
+      width: 480px;
+      display: block;
+      border: 1px solid #86a9bf;
+      margin-top: 1.5em;
+      font-size: 14px; }
+    .Contact_Wrap form input:first-child {
+      margin-top: 0; }
+    .Contact_Wrap form .Form_Btn {
+      background-color: #ffffff;
+      color: #86a9bf;
+      font-weight: bold; }
+      .Contact_Wrap form .Form_Btn:hover {
+        cursor: pointer;
+        background-color: #86a9bf;
+        color: #ffffff; }
+
+body {
+  background-image: none; }
+
+.Page_MainVis {
+  width: 100%;
+  height: 720px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #86a9bf;
+  background-size: 640px 640px;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.Page_MainVis_Toilet {
+  background-image: url(../images/toilet1.png); }
+
+.Page_MainVis_Blog {
+  background-image: url(../images/blog1.png); }
+
+.Page_MainVis_ToiletLP {
+  background-image: url(../images/toilet-lp1.png); }
+
+.Page_MainVis_Moma {
+  background-image: url(../images/moma1.png); }
+
+.Page_MainVis_Jinro {
+  background-image: url(../images/jinro1.png); }
+
+.Page_Contents_Wrap {
+  padding-top: 80px;
+  width: 100%; }
+  .Page_Contents_Wrap .Page_Contents {
+    width: 960px;
+    margin: 0 auto;
+    display: flex; }
+    .Page_Contents_Wrap .Page_Contents .Page_Contents_Text,
+    .Page_Contents_Wrap .Page_Contents .Page_Contents_Image {
+      width: 480px; }
+    .Page_Contents_Wrap .Page_Contents .Page_Contents_Text h2 {
+      color: #86a9bf;
+      font-weight: bold;
+      font-size: 24px; }
+    .Page_Contents_Wrap .Page_Contents .Page_Contents_Text p {
+      color: #86a9bf;
+      margin-top: 1.5em;
+      font-size: 14px; }
+      .Page_Contents_Wrap .Page_Contents .Page_Contents_Text p:first-child {
+        margin-top: 0; }
+    .Page_Contents_Wrap .Page_Contents .Page_Contents_Text .Page_Contents_Link_Wrap {
+      margin-top: 2.5em;
+      width: 420px;
+      display: flex; }
+      .Page_Contents_Wrap .Page_Contents .Page_Contents_Text .Page_Contents_Link_Wrap .Page_Contents_Link {
+        margin-left: 8px; }
+        .Page_Contents_Wrap .Page_Contents .Page_Contents_Text .Page_Contents_Link_Wrap .Page_Contents_Link:first-child {
+          margin-left: 0; }
+        .Page_Contents_Wrap .Page_Contents .Page_Contents_Text .Page_Contents_Link_Wrap .Page_Contents_Link a {
+          border: 1px solid #86a9bf;
+          padding: 4px 8px;
+          color: #86a9bf;
+          font-size: 14px; }
+          .Page_Contents_Wrap .Page_Contents .Page_Contents_Text .Page_Contents_Link_Wrap .Page_Contents_Link a:hover {
+            background-color: #86a9bf;
+            color: #ffffff; }
+    .Page_Contents_Wrap .Page_Contents .Page_Contents_Image li {
+      width: 480px;
+      height: 480px;
+      background-color: #cccccc;
+      margin-top: 28px;
+      background-size: 480px;
+      background-position: center;
+      background-repeat: no-repeat;
+      transition: 0.5s; }
+      .Page_Contents_Wrap .Page_Contents .Page_Contents_Image li:hover {
+        background-size: 520px;
+        transition: 0.5s; }
+      .Page_Contents_Wrap .Page_Contents .Page_Contents_Image li:first-child {
+        margin-top: 0; }
+
+.Page_Contents_Image .Page_Contents_Image1,
+.Page_Contents_Image .Page_Contents_Image2,
+.Page_Contents_Image .Page_Contents_Image3,
+.Page_Contents_Image .Page_Contents_Image4 {
+  opacity: 0; }
+
+.Page_Contents_Image .Page_Contents_Image_Toilet1 {
+  background-image: url(../images/toilet2.png); }
+
+.Page_Contents_Image .Page_Contents_Image_Toilet2 {
+  background-image: url(../images/toilet3.png); }
+
+.Page_Contents_Image .Page_Contents_Image_Toilet3 {
+  background-image: url(../images/toilet4.png); }
+
+.Page_Contents_Image .Page_Contents_Image_Toilet4 {
+  background-image: url(../images/toilet5.png); }
+
+.Page_Contents_Image .Page_Contents_Image_Blog1 {
+  background-image: url(../images/blog2.png); }
+
+.Page_Contents_Image .Page_Contents_Image_Blog2 {
+  background-image: url(../images/blog3.png); }
+
+.Page_Contents_Image .Page_Contents_Image_Blog3 {
+  background-image: url(../images/blog4.png); }
+
+.Page_Contents_Image .Page_Contents_Image_ToiletLP1 {
+  background-image: url(../images/toilet-lp2.png); }
+
+.Page_Contents_Image .Page_Contents_Image_ToiletLP2 {
+  background-image: url(../images/toilet-lp3.png); }
+
+.Page_Contents_Image .Page_Contents_Image_ToiletLP3 {
+  background-image: url(../images/toilet-lp4.png); }
+
+.Page_Contents_Image .Page_Contents_Image_Moma1 {
+  background-image: url(../images/moma2.png); }
+
+.Page_Contents_Image .Page_Contents_Image_Moma2 {
+  background-image: url(../images/moma3.png); }
+
+.Page_Contents_Image .Page_Contents_Image_Jinro1 {
+  background-image: url(../images/jinro2.png); }
+
+.Page_Contents_Image .Page_Contents_Image_Jinro2 {
+  background-image: url(../images/jinro3.png); }
+
+.Page_Footer_Wrap {
+  margin-top: 120px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #86a9bf; }
+  .Page_Footer_Wrap .Page_Footer {
+    width: 960px;
+    margin: 0 auto; }
+    .Page_Footer_Wrap .Page_Footer .Page_Footer_Link_Wrap {
+      width: 960px;
+      display: flex;
+      flex-wrap: wrap; }
+      .Page_Footer_Wrap .Page_Footer .Page_Footer_Link_Wrap .Page_Footer_Link {
+        width: 240px;
+        height: 240px;
+        background-size: 240px;
+        background-position: center;
+        background-repeat: no-repeat; }
+        .Page_Footer_Wrap .Page_Footer .Page_Footer_Link_Wrap .Page_Footer_Link a {
+          display: block;
+          height: 240px;
+          width: 240px;
+          text-align: center;
+          line-height: 240px;
+          color: rgba(255, 255, 255, 0); }
+          .Page_Footer_Wrap .Page_Footer .Page_Footer_Link_Wrap .Page_Footer_Link a:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white; }
+      .Page_Footer_Wrap .Page_Footer .Page_Footer_Link_Wrap .Page_Footer_Link_Top {
+        background-image: url(../images/portfolio.png); }
+      .Page_Footer_Wrap .Page_Footer .Page_Footer_Link_Wrap .Page_Footer_Link_Toilet {
+        background-image: url(../images/toilet1.png); }
+      .Page_Footer_Wrap .Page_Footer .Page_Footer_Link_Wrap .Page_Footer_Link_ToiletLP {
+        background-image: url(../images/toilet-lp1.png); }
+      .Page_Footer_Wrap .Page_Footer .Page_Footer_Link_Wrap .Page_Footer_Link_Blog {
+        background-image: url(../images/blog1.png); }
+      .Page_Footer_Wrap .Page_Footer .Page_Footer_Link_Wrap .Page_Footer_Link_Moma {
+        background-image: url(../images/moma1.png); }
+      .Page_Footer_Wrap .Page_Footer .Page_Footer_Link_Wrap .Page_Footer_Link_Jinro {
+        background-image: url(../images/jinro1.png); }
