@@ -75,7 +75,6 @@ body {
                 margin-top: 2.5em;
                 width: 420px;
                 display: flex;
-                // justify-content: space-between;
                 .Page_Contents_Link {
                     margin-left: 8px;
                     &:first-child {
@@ -255,6 +254,118 @@ body {
             }
             .Page_Footer_Link_Jinro {
                 background-image: url(../images/jinro1.png);
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+@media (max-width: 420px) {
+    body {
+        background-color: $MainColor;
+    }
+    .Page_MainVis {
+        height: 720px;
+        padding: {
+            top: 80px;
+            bottom: 80px;
+        }
+        background: {
+            size: 300px 300px;
+        }
+    }
+    .Page_Contents_Wrap {
+        background-color: #ffffff;
+        padding-top: 64px;
+        padding-bottom: 64px;
+        width: 100%;
+        .Page_Contents {
+            width: 300px;
+            display: block;
+            .Page_Contents_Text,
+            .Page_Contents_Image {
+                width: 300px;
+            }
+            .Page_Contents_Text {
+                h2 {
+                    font: {
+                    }
+                }
+                p {
+                    margin-top: 1em;
+                    font: {
+                        size: 16px;
+                    }
+                }
+                .Page_Contents_Link_Wrap {
+                    margin-top: 2em;
+                    width: 300px;
+                    display: block;
+                    .Page_Contents_Link {
+                        margin-left: 0;
+                        margin-top: 8px;
+                        a {
+                            display: block;
+                            width: 300px;
+                            text-align: center;
+                            padding: 4px 8px;
+                            font-size: 16px;
+                        }
+                    }
+                }
+
+            }
+            .Page_Contents_Image {
+                margin-top: 32px;
+                li {
+                    width: 300px;
+                    height: 300px;
+                    background-color: #ffffff;
+                    margin-top: 0;
+                    background: {
+                        size: 300px;
+                    }
+                    &:hover {
+                        background-size: 320px;
+                        transition: 0.5s;
+                    }
+                    &:first-child {
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .Page_Footer_Wrap {
+        margin-top: 64px;
+        padding: {
+            top: 64px;
+            bottom: 64px;
+        }
+        .Page_Footer {
+            width: 300px;
+            .Page_Footer_Link_Wrap {
+                width: 300px;
+                display: flex;
+                .Page_Footer_Link {
+                    width: 150px;
+                    height: 150px;
+                    background: {
+                        size: 150px;
+                    }
+                    a {
+                        display: block;
+                        height: 150px;
+                        width: 150px;
+                        line-height: 150px;
+                    }
+                }
             }
         }
     }

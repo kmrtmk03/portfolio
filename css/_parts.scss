@@ -58,7 +58,6 @@ $MainColor: #86a9bf;
             width: 480px;
             .Content_Toilet {
                 background: {
-                    // color: #cccccc;
                     image: url(../images/toilet1.png);
                     size: 480px;
                     position: center;
@@ -241,6 +240,173 @@ $MainColor: #86a9bf;
             }
             &:hover {
                 cursor: pointer;
+                background-color: $MainColor;
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 420px) {
+    // ボディ
+    .Index_Body {
+        background: {
+            image: none;
+        }
+    }
+    // メインビジュアル
+    .MainVis_Wrap {
+        .MainVis_Title {
+            padding: {
+                top: 280px;
+                bottom: 280px;
+            }
+            font: {
+                size: 24px;
+            }
+        }
+    }
+    // 作品
+    .Works_Wrap {
+        padding: {
+            top: 60px;
+            bottom: 60px;
+        }
+        .Works {
+            width: 300px;
+            display: block;
+            .Content_Parent {
+                .Content_Child {
+                }
+            }
+            .Content_Wrap {
+                width: 300px;
+                .Content_Toilet {
+                    background: {
+                        size: 300px;
+                    }
+                }
+                .Content_Blog {
+                    background: {
+                        size: 300px;
+                    }
+                }
+                .Content_Moma {
+                    background: {
+                        size: 300px;
+                    }
+                }
+                .Content_Jinro {
+                    background: {
+                        size: 300px;
+                    }
+                }
+                .Content_ToiletLP {
+                    background: {
+                        size: 300px;
+                    }
+                }
+            }
+            .Content_Mid_Wrap {
+                width: 300px;
+                height: 300px;
+                .Content_Mid {
+                    height: 300px;
+                    width: 300px;
+                    &:hover {
+                        background: {
+                            size: 320px;
+                        }
+                    }
+                    a {
+                        width: 300px;
+                        height: 300px;
+                        line-height: 300px;
+                    }
+                }
+            }
+            .Content_Small_Wrap {
+                display: block;
+                .Content_Small {
+                    width: 300px;
+                    height: 300px;
+                    &:hover {
+                        background: {
+                            size: 320px;
+                        }
+                    }
+                    a {
+                        width: 300px;
+                        height: 300px;
+                        line-height: 300px;
+                    }
+                }
+            }
+        }
+    }
+    // プロフィール
+    .Profile_Wrap {
+        width: 100%;
+        padding: {
+            top: 60px;
+            bottom: 60px;
+        }
+        .Profile {
+            width: 300px;
+            margin: 0 auto;
+            .Profile_Text {
+                p {
+                    margin: {
+                        top: 1.3em;
+                    }
+                }
+            }
+            .Profile_Link {
+                padding-top: 2em;
+                display: block;
+                width: 300px;
+                li {
+                    a {
+                        display: block;
+                        border: 1px solid #ffffff;
+                        color: #ffffff;
+                        text-align: center;
+                    }
+                    margin-left: 0;
+                    margin-top: 16px;
+                    &:first-child {
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+    // お問い合わせ
+    .Contact_Wrap {
+        padding: {
+            top: 60px;
+            bottom: 60px;
+        }
+        background-color: #ffffff;
+        form {
+            width: 300px;
+            margin: 0 auto;
+            input,
+            textarea {
+                width: 300px;
+                margin-top: 16px;
+            }
+            input {
+            }
+            .Form_Btn {
                 background-color: $MainColor;
                 color: #ffffff;
             }

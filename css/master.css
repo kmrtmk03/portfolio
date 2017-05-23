@@ -187,6 +187,92 @@ input {
         background-color: #86a9bf;
         color: #ffffff; }
 
+@media (max-width: 420px) {
+  .Index_Body {
+    background-image: none; }
+  .MainVis_Wrap .MainVis_Title {
+    padding-top: 280px;
+    padding-bottom: 280px;
+    font-size: 24px; }
+  .Works_Wrap {
+    padding-top: 60px;
+    padding-bottom: 60px; }
+    .Works_Wrap .Works {
+      width: 300px;
+      display: block; }
+      .Works_Wrap .Works .Content_Wrap {
+        width: 300px; }
+        .Works_Wrap .Works .Content_Wrap .Content_Toilet {
+          background-size: 300px; }
+        .Works_Wrap .Works .Content_Wrap .Content_Blog {
+          background-size: 300px; }
+        .Works_Wrap .Works .Content_Wrap .Content_Moma {
+          background-size: 300px; }
+        .Works_Wrap .Works .Content_Wrap .Content_Jinro {
+          background-size: 300px; }
+        .Works_Wrap .Works .Content_Wrap .Content_ToiletLP {
+          background-size: 300px; }
+      .Works_Wrap .Works .Content_Mid_Wrap {
+        width: 300px;
+        height: 300px; }
+        .Works_Wrap .Works .Content_Mid_Wrap .Content_Mid {
+          height: 300px;
+          width: 300px; }
+          .Works_Wrap .Works .Content_Mid_Wrap .Content_Mid:hover {
+            background-size: 320px; }
+          .Works_Wrap .Works .Content_Mid_Wrap .Content_Mid a {
+            width: 300px;
+            height: 300px;
+            line-height: 300px; }
+      .Works_Wrap .Works .Content_Small_Wrap {
+        display: block; }
+        .Works_Wrap .Works .Content_Small_Wrap .Content_Small {
+          width: 300px;
+          height: 300px; }
+          .Works_Wrap .Works .Content_Small_Wrap .Content_Small:hover {
+            background-size: 320px; }
+          .Works_Wrap .Works .Content_Small_Wrap .Content_Small a {
+            width: 300px;
+            height: 300px;
+            line-height: 300px; }
+  .Profile_Wrap {
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px; }
+    .Profile_Wrap .Profile {
+      width: 300px;
+      margin: 0 auto; }
+      .Profile_Wrap .Profile .Profile_Text p {
+        margin-top: 1.3em; }
+      .Profile_Wrap .Profile .Profile_Link {
+        padding-top: 2em;
+        display: block;
+        width: 300px; }
+        .Profile_Wrap .Profile .Profile_Link li {
+          margin-left: 0;
+          margin-top: 16px; }
+          .Profile_Wrap .Profile .Profile_Link li a {
+            display: block;
+            border: 1px solid #ffffff;
+            color: #ffffff;
+            text-align: center; }
+          .Profile_Wrap .Profile .Profile_Link li:first-child {
+            margin-top: 0; }
+  .Contact_Wrap {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #ffffff; }
+    .Contact_Wrap form {
+      width: 300px;
+      margin: 0 auto; }
+      .Contact_Wrap form input,
+      .Contact_Wrap form textarea {
+        width: 300px;
+        margin-top: 16px; }
+      .Contact_Wrap form .Form_Btn {
+        background-color: #86a9bf;
+        color: #ffffff; } }
+
 body {
   background-image: none; }
 
@@ -354,3 +440,70 @@ body {
         background-image: url(../images/moma1.png); }
       .Page_Footer_Wrap .Page_Footer .Page_Footer_Link_Wrap .Page_Footer_Link_Jinro {
         background-image: url(../images/jinro1.png); }
+
+@media (max-width: 420px) {
+  body {
+    background-color: #86a9bf; }
+  .Page_MainVis {
+    height: 720px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-size: 300px 300px; }
+  .Page_Contents_Wrap {
+    background-color: #ffffff;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    width: 100%; }
+    .Page_Contents_Wrap .Page_Contents {
+      width: 300px;
+      display: block; }
+      .Page_Contents_Wrap .Page_Contents .Page_Contents_Text,
+      .Page_Contents_Wrap .Page_Contents .Page_Contents_Image {
+        width: 300px; }
+      .Page_Contents_Wrap .Page_Contents .Page_Contents_Text p {
+        margin-top: 1em;
+        font-size: 16px; }
+      .Page_Contents_Wrap .Page_Contents .Page_Contents_Text .Page_Contents_Link_Wrap {
+        margin-top: 2em;
+        width: 300px;
+        display: block; }
+        .Page_Contents_Wrap .Page_Contents .Page_Contents_Text .Page_Contents_Link_Wrap .Page_Contents_Link {
+          margin-left: 0;
+          margin-top: 8px; }
+          .Page_Contents_Wrap .Page_Contents .Page_Contents_Text .Page_Contents_Link_Wrap .Page_Contents_Link a {
+            display: block;
+            width: 300px;
+            text-align: center;
+            padding: 4px 8px;
+            font-size: 16px; }
+      .Page_Contents_Wrap .Page_Contents .Page_Contents_Image {
+        margin-top: 32px; }
+        .Page_Contents_Wrap .Page_Contents .Page_Contents_Image li {
+          width: 300px;
+          height: 300px;
+          background-color: #ffffff;
+          margin-top: 0;
+          background-size: 300px; }
+          .Page_Contents_Wrap .Page_Contents .Page_Contents_Image li:hover {
+            background-size: 320px;
+            transition: 0.5s; }
+          .Page_Contents_Wrap .Page_Contents .Page_Contents_Image li:first-child {
+            margin-top: 0; }
+  .Page_Footer_Wrap {
+    margin-top: 64px;
+    padding-top: 64px;
+    padding-bottom: 64px; }
+    .Page_Footer_Wrap .Page_Footer {
+      width: 300px; }
+      .Page_Footer_Wrap .Page_Footer .Page_Footer_Link_Wrap {
+        width: 300px;
+        display: flex; }
+        .Page_Footer_Wrap .Page_Footer .Page_Footer_Link_Wrap .Page_Footer_Link {
+          width: 150px;
+          height: 150px;
+          background-size: 150px; }
+          .Page_Footer_Wrap .Page_Footer .Page_Footer_Link_Wrap .Page_Footer_Link a {
+            display: block;
+            height: 150px;
+            width: 150px;
+            line-height: 150px; } }
