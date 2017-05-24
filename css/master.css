@@ -497,7 +497,8 @@ body {
   .Page_Footer_Wrap {
     margin-top: 64px;
     padding-top: 64px;
-    padding-bottom: 64px; }
+    padding-bottom: 64px;
+    background-color: #86a9bf; }
     .Page_Footer_Wrap .Page_Footer {
       width: 300px; }
       .Page_Footer_Wrap .Page_Footer .Page_Footer_Link_Wrap {
