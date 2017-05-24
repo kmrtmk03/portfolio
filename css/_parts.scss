@@ -48,7 +48,7 @@ $MainColor: #86a9bf;
                     display: block;
                     &:hover {
                         color: rgba(255, 255, 255, 1);
-                        background-color: rgba(0, 0, 0, 0.8);
+                        background-color: rgba(134, 169, 191, 1);
                         transition: 0.6s;
                     }
                 }
@@ -194,8 +194,9 @@ $MainColor: #86a9bf;
                     border: 1px solid #ffffff;
                     color: #ffffff;
                     &:hover {
-                        background-color: #ffffff;
-                        color: #666666;
+                        border-color: $MainColor;
+                        background-color: $MainColor;
+                        color: #ffffff;
                     }
                 }
                 margin-left: 16px;

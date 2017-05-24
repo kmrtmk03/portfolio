@@ -58,7 +58,7 @@ input {
       display: block; }
       .Works_Wrap .Works .Content_Parent .Content_Child a:hover {
         color: white;
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: #86a9bf;
         transition: 0.6s; }
     .Works_Wrap .Works .Content_Wrap {
       width: 480px; }
@@ -155,8 +155,9 @@ input {
           border: 1px solid #ffffff;
           color: #ffffff; }
           .Profile_Wrap .Profile .Profile_Link li a:hover {
-            background-color: #ffffff;
-            color: #666666; }
+            border-color: #86a9bf;
+            background-color: #86a9bf;
+            color: #ffffff; }
         .Profile_Wrap .Profile .Profile_Link li:first-child {
           margin-left: 0; }
 
@@ -340,7 +341,7 @@ body {
     .Page_Contents_Wrap .Page_Contents .Page_Contents_Image li {
       width: 480px;
       height: 480px;
-      background-color: #cccccc;
+      background-color: #86a9bf;
       margin-top: 28px;
       background-size: 480px;
       background-position: center;
@@ -404,7 +405,7 @@ body {
   margin-top: 120px;
   padding-top: 80px;
   padding-bottom: 80px;
-  background-color: #86a9bf; }
+  background-color: #cccccc; }
   .Page_Footer_Wrap .Page_Footer {
     width: 960px;
     margin: 0 auto; }
@@ -418,6 +419,9 @@ body {
         background-size: 240px;
         background-position: center;
         background-repeat: no-repeat; }
+        .Page_Footer_Wrap .Page_Footer .Page_Footer_Link_Wrap .Page_Footer_Link:hover {
+          background-size: 260px;
+          transition: 0.6s; }
         .Page_Footer_Wrap .Page_Footer .Page_Footer_Link_Wrap .Page_Footer_Link a {
           display: block;
           height: 240px;
@@ -426,7 +430,8 @@ body {
           line-height: 240px;
           color: rgba(255, 255, 255, 0); }
           .Page_Footer_Wrap .Page_Footer .Page_Footer_Link_Wrap .Page_Footer_Link a:hover {
-            background-color: rgba(0, 0, 0, 0.7);
+            transition: 0.6s;
+            background-color: #86a9bf;
             color: white; }
       .Page_Footer_Wrap .Page_Footer .Page_Footer_Link_Wrap .Page_Footer_Link_Top {
         background-image: url(../images/portfolio.png); }

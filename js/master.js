@@ -1,5 +1,4 @@
 var winScroll = 0;
-
 $(window).scroll(function(){
     winScroll = $(window).scrollTop();
     if(winScroll > 320) {
