@@ -27,6 +27,12 @@ $(window).scroll(function(){
     }
 });
 
+var winH = window.innerHeight;
+
+$('.MainVis_Wrap').css({
+    'height':winH
+})
+
 
 
 var winW = window.innerWidth;
@@ -36,7 +42,10 @@ if(winW > 500) {
     	var options = { videoId: 'qD_jkq19lwE'};
     	$('.Movie').tubular(options);
     });
+} else {
+    $('.MainVis_Wrap').html('<h1 class="MainVis_Title">Kimura Tomoki</h1>');
 }
+
 
 // youtube埋め込み
 // $('document').ready(function() {

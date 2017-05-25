@@ -19,17 +19,16 @@ $MainColor: #86a9bf;
 
 // メインビジュアル
 .MainVis_Wrap {
-    background-color: $MainColor;
+    background-color: rgba(0, 0, 0, 0.5);
     .MainVis_Title {
-        color: $MainColor;
-        text-shadow: 1px 1px 0px rgba(255, 255, 255, 1);
+        color: rgba(255, 255, 255, 1);
         text-align: center;
         padding: {
-            top: 240px;
-            bottom: 240px;
+            top: 280px;
+            bottom: 280px;
         }
         font: {
-            size: 48px;
+            size: 24px;
             weight: bold;
         }
     }
@@ -157,8 +156,9 @@ $MainColor: #86a9bf;
 
 // プロフィール
 .Profile_Wrap {
+    text-align: center;
     width: 100%;
-    background-color: rgba(40, 40, 40, 0.65);
+    background-color: $MainColor;
     padding: {
         top: 120px;
         bottom: 120px;
@@ -203,9 +203,9 @@ $MainColor: #86a9bf;
                     border: 1px solid #ffffff;
                     color: #ffffff;
                     &:hover {
-                        border-color: $MainColor;
-                        background-color: $MainColor;
-                        color: #ffffff;
+                        border-color: #ffffff;
+                        background-color: #ffffff;
+                        color: $MainColor;
                     }
                 }
                 margin-left: 16px;
@@ -274,10 +274,16 @@ $MainColor: #86a9bf;
     }
     // メインビジュアル
     .MainVis_Wrap {
+        background-color: $MainColor;
+        position: relative;
         .MainVis_Title {
+            position: absolute;
+            top: calc(50% - 20px);
+            width: 100%;
+            color: rgba(255, 255, 255, 1);
             padding: {
-                top: 320px;
-                bottom: 320px;
+                top: 0px;
+                bottom: 0px;
             }
             font: {
                 size: 24px;
