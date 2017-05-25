@@ -26,3 +26,20 @@ $(window).scroll(function(){
         });
     }
 });
+
+
+
+var winW = window.innerWidth;
+
+if(winW > 500) {
+    $('document').ready(function() {
+    	var options = { videoId: 'qD_jkq19lwE'};
+    	$('.Movie').tubular(options);
+    });
+}
+
+// youtube埋め込み
+// $('document').ready(function() {
+// 	var options = { videoId: 'qD_jkq19lwE'};
+// 	$('.Movie').tubular(options);
+// });

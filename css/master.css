@@ -26,19 +26,24 @@ h2 {
 input {
   border-radius: 0; }
 
+/* ----- PC ----- **/
 .Index_Body {
-  background-image: url(../images/profile.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-attachment: fixed; }
 
+.Index_Body_Wrap {
+  position: relative;
+  z-index: 1000; }
+
 .MainVis_Wrap {
   background-color: #86a9bf; }
   .MainVis_Wrap .MainVis_Title {
-    color: #ffffff;
+    color: #86a9bf;
+    text-shadow: 1px 1px 0px white;
     text-align: center;
-    padding-top: 320px;
-    padding-bottom: 320px;
+    padding-top: 240px;
+    padding-bottom: 240px;
     font-size: 48px;
     font-weight: bold; }
 
@@ -188,12 +193,13 @@ input {
         background-color: #86a9bf;
         color: #ffffff; }
 
+/* ----- SP ----- */
 @media (max-width: 420px) {
   .Index_Body {
     background-image: none; }
   .MainVis_Wrap .MainVis_Title {
-    padding-top: 280px;
-    padding-bottom: 280px;
+    padding-top: 320px;
+    padding-bottom: 320px;
     font-size: 24px; }
   .Works_Wrap {
     padding-top: 60px;
