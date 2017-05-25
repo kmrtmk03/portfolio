@@ -36,8 +36,34 @@ input {
   position: relative;
   z-index: 1000; }
 
+.Load_Cover {
+  width: 100%;
+  min-height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+  background-color: #86a9bf; }
+  .Load_Cover p {
+    position: fixed;
+    top: calc(50% - 13.5px);
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    animation: LoadCoverAnime 1.5s infinite alternate; }
+
+@keyframes LoadCoverAnime {
+  0% {
+    font-size: 16px;
+    top: calc(50% - 13.5px); }
+  100% {
+    font-size: 24px;
+    top: calc(50% - 20px); } }
+
 .MainVis_Wrap {
-  background-color: rgba(0, 0, 0, 0.5); }
+  background-color: rgba(100, 100, 100, 0.5);
+  position: relative; }
   .MainVis_Wrap .MainVis_Title {
     color: white;
     text-align: center;
@@ -45,6 +71,32 @@ input {
     padding-bottom: 280px;
     font-size: 24px;
     font-weight: bold; }
+  .MainVis_Wrap .MainVis_Arrow {
+    position: absolute;
+    bottom: 16px;
+    left: calc(50% - 28px);
+    background-image: url(../images/mainArrow.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 56px;
+    height: 56px;
+    animation: ArrowAnime 2.5s infinite; }
+    .MainVis_Wrap .MainVis_Arrow:hover {
+      cursor: pointer; }
+
+@keyframes ArrowAnime {
+  0% {
+    bottom: 64px;
+    opacity: 1; }
+  25% {
+    bottom: 64px;
+    opacity: 1; }
+  50% {
+    bottom: 16px;
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
 
 .Works_Wrap {
   padding-top: 120px;
@@ -464,8 +516,8 @@ body {
     background-color: #86a9bf; }
   .Page_MainVis {
     height: 720px;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 0;
+    padding-bottom: 0;
     background-size: 300px 300px; }
   .Page_Contents_Wrap {
     background-color: #ffffff;
@@ -478,22 +530,24 @@ body {
       .Page_Contents_Wrap .Page_Contents .Page_Contents_Text,
       .Page_Contents_Wrap .Page_Contents .Page_Contents_Image {
         width: 300px; }
-      .Page_Contents_Wrap .Page_Contents .Page_Contents_Text p {
-        margin-top: 1em;
-        font-size: 16px; }
-      .Page_Contents_Wrap .Page_Contents .Page_Contents_Text .Page_Contents_Link_Wrap {
-        margin-top: 2em;
-        width: 300px;
-        display: block; }
-        .Page_Contents_Wrap .Page_Contents .Page_Contents_Text .Page_Contents_Link_Wrap .Page_Contents_Link {
-          margin-left: 0;
-          margin-top: 8px; }
-          .Page_Contents_Wrap .Page_Contents .Page_Contents_Text .Page_Contents_Link_Wrap .Page_Contents_Link a {
-            display: block;
-            width: 300px;
-            text-align: center;
-            padding: 4px 8px;
-            font-size: 16px; }
+      .Page_Contents_Wrap .Page_Contents .Page_Contents_Text {
+        text-align: center; }
+        .Page_Contents_Wrap .Page_Contents .Page_Contents_Text p {
+          margin-top: 1em;
+          font-size: 16px; }
+        .Page_Contents_Wrap .Page_Contents .Page_Contents_Text .Page_Contents_Link_Wrap {
+          margin-top: 2em;
+          width: 300px;
+          display: block; }
+          .Page_Contents_Wrap .Page_Contents .Page_Contents_Text .Page_Contents_Link_Wrap .Page_Contents_Link {
+            margin-left: 0;
+            margin-top: 8px; }
+            .Page_Contents_Wrap .Page_Contents .Page_Contents_Text .Page_Contents_Link_Wrap .Page_Contents_Link a {
+              display: block;
+              width: 300px;
+              text-align: center;
+              padding: 4px 8px;
+              font-size: 16px; }
       .Page_Contents_Wrap .Page_Contents .Page_Contents_Image {
         margin-top: 32px; }
         .Page_Contents_Wrap .Page_Contents .Page_Contents_Image li {
@@ -521,6 +575,9 @@ body {
           width: 150px;
           height: 150px;
           background-size: 150px; }
+          .Page_Footer_Wrap .Page_Footer .Page_Footer_Link_Wrap .Page_Footer_Link:hover {
+            background-size: 170px;
+            transition: 0.6s; }
           .Page_Footer_Wrap .Page_Footer .Page_Footer_Link_Wrap .Page_Footer_Link a {
             display: block;
             height: 150px;

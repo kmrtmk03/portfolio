@@ -17,9 +17,39 @@ $MainColor: #86a9bf;
     z-index: 1000;
 }
 
+.Load_Cover {
+    width: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    background-color: $MainColor;
+    p {
+        position: fixed;
+        top: calc(50% - 13.5px);
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-size: 16px;
+        animation: LoadCoverAnime 1.5s infinite alternate;
+    }
+}
+@keyframes LoadCoverAnime {
+    0% {
+        font-size: 16px;
+        top: calc(50% - 13.5px);
+    }
+    100% {
+        font-size: 24px;
+        top: calc(50% - 20px);
+    }
+}
+
 // メインビジュアル
 .MainVis_Wrap {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(100, 100, 100, 0.5);
+    position: relative;
     .MainVis_Title {
         color: rgba(255, 255, 255, 1);
         text-align: center;
@@ -31,6 +61,41 @@ $MainColor: #86a9bf;
             size: 24px;
             weight: bold;
         }
+    }
+    .MainVis_Arrow {
+        position: absolute;
+        bottom: 16px;
+        left: calc(50% - 28px);
+        background: {
+            image: url(../images/mainArrow.svg);
+            position: center;
+            size: cover;
+            repeat: no-repeat;
+        }
+        width: 56px;
+        height: 56px;
+        animation: ArrowAnime 2.5s infinite;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+@keyframes ArrowAnime {
+    0% {
+        bottom: 64px;
+        opacity: 1;
+    }
+    25% {
+        bottom: 64px;
+        opacity: 1;
+    }
+    50% {
+        bottom: 16px;
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }
 
